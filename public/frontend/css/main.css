@@ -1,0 +1,31 @@
+#popup{
+    max-height: 280px;
+    max-width: 535px;
+    background-color: #fff;
+    text-transform: capitalize;
+    position: absolute;
+    top: 0px;
+    left:0px;
+    bottom:0px;
+    right:0px;
+    margin: auto;
+    color: #000;
+    text-align: justify;
+    padding: 10px;
+}
+
+#popup p{
+    font-size: 14px !important;
+}
+
+.popup-view{
+    display: block !important;
+}
+
+.popup-hidden{
+    display: none;
+}
+
+.w-30{
+    width: 35% !important;
+}

@@ -1,0 +1,16 @@
+.sticky-img {
+    width: 49px !important;
+    background-color: #fff;
+    padding: 5px;
+    border-radius: 50%;
+    margin-left: 80px;
+    margin-top: 20px;
+    transition: .5s;
+}
+.sticky-head{
+    position: fixed;
+    top:0px;
+    z-index: 3;
+    width: 100%;
+    transition: 2s;
+}
