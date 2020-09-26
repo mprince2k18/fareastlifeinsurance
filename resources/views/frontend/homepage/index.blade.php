@@ -1830,7 +1830,7 @@ button{
 
           <div class="info col-lg-6 col-sm-12 float-right">
 
-            <div class="fareast-chairman ml-5">
+            <div class="fareast-chairman mr-5 text-right">
 
             
               <img src="{{ asset('frontend/img/cr.png') }}" class="w-25 m-3" alt="Chairman">
@@ -1841,7 +1841,7 @@ button{
                 Mr. Md. Nazrul Islam
               </h3> --}}
               <h3 class="ml9">
-                <span class="text-wrapper" style="cursor: pointer; color: #fff;">
+                <span class="text-wrapper text-center" style="cursor: pointer; color: #fff;">
                   <span class="letters d-block" style="font-family: 'Ubuntu', sans-serif; font-size: 20px;">Md. Nazrul Islam</span>
                   <span class="letters" style="font-family: 'Ubuntu', sans-serif; font-size: 18px;">Chairman</span>
                 </span>

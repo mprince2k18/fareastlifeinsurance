@@ -440,6 +440,21 @@ body::-webkit-scrollbar-thumb {
 }
 
 
+#accordion_one::-webkit-scrollbar {
+  width: 0.4em;
+}
+
+#accordion_one::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+#accordion_one::-webkit-scrollbar-thumb {
+  background-color: #46A745;
+  outline: 1px solid slategrey;
+  border-radius: 5px;
+}
+
+
 /*05-02-2020 start*/
 header .brand img{
     transition: 0.3s !important;
@@ -2133,7 +2148,6 @@ ul li ul li a {
             <div class="col-4 text-center">
               <ul class="list-group list-group-flush text-left">
                 <li> <h6 class="f-s-14"> <i class="fas fa-phone-square"></i> 16681 or 09612666999</h6> </li>
-                <li> <h6 class="f-s-14"> <i class="fas fa-envelope"></i> info@fareastislamilife.com</h6> </li>
                 <li> <h6 class="f-s-14"> <i class="fab fa-google-play"></i> Get Out App</h6> </li>
             </ul>
             </div>

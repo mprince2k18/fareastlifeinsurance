@@ -48,7 +48,7 @@ body {
 
 header {
     position: absolute;
-    top: 83px;
+    top: 10%;
     left: 0px;
     width: 100%;
     z-index: 3;
@@ -670,3 +670,10 @@ header .navbar-nav li a {
     color: #fff;
 }
 
+#minimal-bootstrap-carousel [class*=carousel-control] {
+    top: 55% !important;
+}
+
+#videoLink{
+    border-radius: 5px;
+}
