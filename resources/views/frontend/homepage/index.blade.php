@@ -3035,7 +3035,7 @@ button{
               @foreach ($awards as $award)
 
                 <a href="#">
-                  <div class="icon-box-three text-center" style="border: 2px solid #e4e8ed !important; max-height: 360px;">
+                  <div class="icon-box-three text-center" style="border: 2px solid #e4e8ed !important; height: 360px;">
 
                         <img src="{{ asset('uploads/awards') }}/{{ $award->thumbnail }}" class="hvr-bounce-in" alt="{{ $fareast_star->name }}">
                         <h6 class="awardtitle" style="font-size: 14px;">{{ $award->name }}</h6>
