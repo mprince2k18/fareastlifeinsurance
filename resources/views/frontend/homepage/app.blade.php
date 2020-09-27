@@ -2146,10 +2146,16 @@ ul li ul li a {
               <img src="{{ asset('frontend/logo.png') }}" style="width: 35%;" alt="#fareast">
             </div>
             <div class="col-4 text-center">
-              <ul class="list-group list-group-flush text-left">
-                <li> <h6 class="f-s-14"> <i class="fas fa-phone-square"></i> 16681 or 09612666999</h6> </li>
-                <li> <h6 class="f-s-14"> <i class="fab fa-google-play"></i> Get Out App</h6> </li>
-            </ul>
+                  <ul class="d-flex">
+                    <li class="nav-item text-left text-dark">
+                      16681 <br> 09612666999
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">
+                        <img src="{{ asset('frontend/preloader.gif') }}"  style="border-left: 1px solid;" class="w-50" alt="#logo">
+                      </a>
+                    </li>
+                </ul>
             </div>
           </div>
 
