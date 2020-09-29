@@ -8,7 +8,7 @@
     <title>Fareast Islami life insurance co. ltd.</title>
 
     <!-- CSRF Token -->
-    <meta name="csrf-token" content="TZiSKzETCza4QbYDZIjUzfehavGLIWZE0rZZqz6O">
+    <meta name="csrf-token" content="XD9jddQe9MJfimlkfwMoVkGQyM1FThecBBLTV7UE">
 
     <!-- popup -->
 
@@ -2395,6 +2395,133 @@ button{
   border-radius: 25px;
   margin-left:170px;
 }
+
+
+.fareast-gallery {
+  column-width: 300px;
+  column-gap: 5px;
+  padding: 5px;
+}
+
+.fareast-gallery img {
+  width: 100%;
+  cursor: pointer;
+  border-radius: 10px !important;
+}
+
+.fareast-lightbox {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: none;
+  background: #7f8c8d;
+  perspective: 1000;
+}
+
+.fareast-lightbox .filter {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  filter: blur(20px);
+  opacity: 0.5;
+  background-position: center;
+  background-size: cover;
+}
+
+.fareast-lightbox img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotateY(0deg);
+  max-height: 95vh;
+  max-width: calc(95vw - 100px);
+  transition: 0.8s cubic-bezier(0.7, 0, 0.4, 1);
+  transform-style: preserve-3d;
+}
+
+
+/*.lightbox:hover img{
+  transform: translate(-50%, -50%) rotateY(180deg);
+}*/
+
+.fareast-lightbox [class^="arrow"] {
+  height: 200px;
+  width: 50px;
+  background: rgba(0, 0, 0, 0.4);
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.fareast-lightbox [class^="arrow"]:after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+  width: 15px;
+  height: 15px;
+}
+
+.fareast-lightbox .arrowr {
+  right: 0;
+}
+
+.fareast-lightbox .arrowr:after {
+  border-right: 1px solid white;
+  border-bottom: 1px solid white;
+}
+
+.fareast-lightbox .arrowl {
+  left: 0;
+}
+
+.fareast-lightbox .arrowl:after {
+  border-left: 1px solid white;
+  border-top: 1px solid white;
+}
+
+.fareast-lightbox .close {
+  position: absolute;
+  right: 0;
+  width: 50px;
+  height: 50px;
+  background: rgba(0, 0, 0, 0.4);
+  margin: 20px;
+  cursor: pointer;
+}
+
+.fareast-lightbox .close:after,
+.close:before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 1px;
+  height: 100%;
+  background: #e74c3c;
+}
+
+.fareast-lightbox .close:after {
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.fareast-lightbox .close:before {
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.fareast-lightbox .title {
+  font-size: 20px;
+  color: #000;
+  z-index: 1000;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
 
 
 
@@ -6207,279 +6334,206 @@ Stage <span style="mso-spacerun:yes">  </span>Anticipated Endowment <span style
       <div class="row">
 
 
-                          <div class="col-lg-3 col-md-4 col-xs-6">
-                
-
-
-                <div id="gallery">
-                  <div><img src="http://localhost/fareast/public/uploads/gallery/57.JPG"/>
-                    <a href="#lightbox-57" style="font-size: 14px;">জোনাল কনফারেন্স-২০১৯ উদ্বোধন করছেন মাননীয় চেয়ারম্যান জনাব, নজরুল ইসলাম স্যার</a></div>
-                </div>
-
-                <div class="lightbox" id="lightbox-57">
-                  <div class="content"><img src="http://localhost/fareast/public/uploads/gallery/57.JPG"/>
-                    <div class="title">জোনাল কনফারেন্স-২০১৯ উদ্বোধন করছেন মাননীয় চেয়ারম্যান জনাব, নজরুল ইসলাম স্যার</div><a class="close" href="#gallery"></a>
-                  </div>
-                
-                </div>
-              </div>
-
-                          <div class="col-lg-3 col-md-4 col-xs-6">
-                
-
-
-                <div id="gallery">
-                  <div><img src="http://localhost/fareast/public/uploads/gallery/56.jpg"/>
-                    <a href="#lightbox-56" style="font-size: 14px;">Fareast Apps, Composite Service Center &amp; TVC এর শুভ উদ্বোধন করছেন জনাব, শফিকুর রহমান পাটোয়ারী (চেয়ারম্যান , বীমা উন্নয়ন ও নিয়ন্ত্রন কর্তৃপক্ষ)।</a></div>
-                </div>
-
-                <div class="lightbox" id="lightbox-56">
-                  <div class="content"><img src="http://localhost/fareast/public/uploads/gallery/56.jpg"/>
-                    <div class="title">Fareast Apps, Composite Service Center &amp; TVC এর শুভ উদ্বোধন করছেন জনাব, শফিকুর রহমান পাটোয়ারী (চেয়ারম্যান , বীমা উন্নয়ন ও নিয়ন্ত্রন কর্তৃপক্ষ)।</div><a class="close" href="#gallery"></a>
-                  </div>
-                
-                </div>
-              </div>
-
-                          <div class="col-lg-3 col-md-4 col-xs-6">
-                
-
-
-                <div id="gallery">
-                  <div><img src="http://localhost/fareast/public/uploads/gallery/55.JPG"/>
-                    <a href="#lightbox-55" style="font-size: 14px;">আইটি ডিপার্ট্মেন্ট পরিদর্শন করছেন মাননীয় চেয়ারম্যান জনাব, মোঃ শফিকুর রহমান পাটোয়ারী (বীমা উন্নয়ন ও নিয়ন্ত্রন কর্তৃপক্ষ) । সাথে আছেন জনাব, শেখ কবির হোসেন (মাননীয় প্রেসিডেন্ট, বাংলাদেশ ইন্সুরেন্স এসোসিয়েশন)</a></div>
-                </div>
-
-                <div class="lightbox" id="lightbox-55">
-                  <div class="content"><img src="http://localhost/fareast/public/uploads/gallery/55.JPG"/>
-                    <div class="title">আইটি ডিপার্ট্মেন্ট পরিদর্শন করছেন মাননীয় চেয়ারম্যান জনাব, মোঃ শফিকুর রহমান পাটোয়ারী (বীমা উন্নয়ন ও নিয়ন্ত্রন কর্তৃপক্ষ) । সাথে আছেন জনাব, শেখ কবির হোসেন (মাননীয় প্রেসিডেন্ট, বাংলাদেশ ইন্সুরেন্স এসোসিয়েশন)</div><a class="close" href="#gallery"></a>
-                  </div>
-                
-                </div>
-              </div>
-
-                          <div class="col-lg-3 col-md-4 col-xs-6">
-                
-
-
-                <div id="gallery">
-                  <div><img src="http://localhost/fareast/public/uploads/gallery/54.jpg"/>
-                    <a href="#lightbox-54" style="font-size: 14px;">বিভাগীয় ইনচার্জগনের মাসিক সমন্বয় সভা-২০১৯</a></div>
-                </div>
-
-                <div class="lightbox" id="lightbox-54">
-                  <div class="content"><img src="http://localhost/fareast/public/uploads/gallery/54.jpg"/>
-                    <div class="title">বিভাগীয় ইনচার্জগনের মাসিক সমন্বয় সভা-২০১৯</div><a class="close" href="#gallery"></a>
-                  </div>
-                
-                </div>
-              </div>
-
-                          <div class="col-lg-3 col-md-4 col-xs-6">
-                
-
-
-                <div id="gallery">
-                  <div><img src="http://localhost/fareast/public/uploads/gallery/53.jpg"/>
-                    <a href="#lightbox-53" style="font-size: 14px;">সেরা করদাতা হিসেবে সম্মাননা গ্রহন করছেন কোম্পানীর চেয়ারম্যান স্যার জনাব, নজরুল ইসলাম</a></div>
-                </div>
-
-                <div class="lightbox" id="lightbox-53">
-                  <div class="content"><img src="http://localhost/fareast/public/uploads/gallery/53.jpg"/>
-                    <div class="title">সেরা করদাতা হিসেবে সম্মাননা গ্রহন করছেন কোম্পানীর চেয়ারম্যান স্যার জনাব, নজরুল ইসলাম</div><a class="close" href="#gallery"></a>
-                  </div>
-                
-                </div>
-              </div>
-
-                          <div class="col-lg-3 col-md-4 col-xs-6">
-                
-
-
-                <div id="gallery">
-                  <div><img src="http://localhost/fareast/public/uploads/gallery/52.JPG"/>
-                    <a href="#lightbox-52" style="font-size: 14px;">আইটি ডিপার্টমেন্ট পরিদর্শন করছেন  জনাব, নজরুল ইসলাম (চেয়ারম্যান) এবং মোঃ হেমায়েত উল্লাহ (মুখ্য নির্বাহী কর্মকর্তা)</a></div>
-                </div>
-
-                <div class="lightbox" id="lightbox-52">
-                  <div class="content"><img src="http://localhost/fareast/public/uploads/gallery/52.JPG"/>
-                    <div class="title">আইটি ডিপার্টমেন্ট পরিদর্শন করছেন  জনাব, নজরুল ইসলাম (চেয়ারম্যান) এবং মোঃ হেমায়েত উল্লাহ (মুখ্য নির্বাহী কর্মকর্তা)</div><a class="close" href="#gallery"></a>
-                  </div>
-                
-                </div>
-              </div>
-
-                          <div class="col-lg-3 col-md-4 col-xs-6">
-                
-
-
-                <div id="gallery">
-                  <div><img src="http://localhost/fareast/public/uploads/gallery/51.jpg"/>
-                    <a href="#lightbox-51" style="font-size: 14px;">১৮তম  প্রতিষ্ঠা বার্ষিকী ও ইফতার মাহফিল-২০১৮</a></div>
-                </div>
-
-                <div class="lightbox" id="lightbox-51">
-                  <div class="content"><img src="http://localhost/fareast/public/uploads/gallery/51.jpg"/>
-                    <div class="title">১৮তম  প্রতিষ্ঠা বার্ষিকী ও ইফতার মাহফিল-২০১৮</div><a class="close" href="#gallery"></a>
-                  </div>
-                
-                </div>
-              </div>
-
-                          <div class="col-lg-3 col-md-4 col-xs-6">
-                
-
-
-                <div id="gallery">
-                  <div><img src="http://localhost/fareast/public/uploads/gallery/50.jpg"/>
-                    <a href="#lightbox-50" style="font-size: 14px;">বীমা মেলা-২০১৮ উদ্বোধনী অনুষ্ঠানে আলাপ আলোচনায়</a></div>
-                </div>
-
-                <div class="lightbox" id="lightbox-50">
-                  <div class="content"><img src="http://localhost/fareast/public/uploads/gallery/50.jpg"/>
-                    <div class="title">বীমা মেলা-২০১৮ উদ্বোধনী অনুষ্ঠানে আলাপ আলোচনায়</div><a class="close" href="#gallery"></a>
-                  </div>
-                
-                </div>
-              </div>
-
-                          <div class="col-lg-3 col-md-4 col-xs-6">
-                
-
-
-                <div id="gallery">
-                  <div><img src="http://localhost/fareast/public/uploads/gallery/49.JPG"/>
-                    <a href="#lightbox-49" style="font-size: 14px;">বীমা মেলা-২০১৮ উপলক্ষ্যে র‍্যালী্র আয়োজন করা হয়।</a></div>
-                </div>
-
-                <div class="lightbox" id="lightbox-49">
-                  <div class="content"><img src="http://localhost/fareast/public/uploads/gallery/49.JPG"/>
-                    <div class="title">বীমা মেলা-২০১৮ উপলক্ষ্যে র‍্যালী্র আয়োজন করা হয়।</div><a class="close" href="#gallery"></a>
-                  </div>
-                
-                </div>
-              </div>
-
-                          <div class="col-lg-3 col-md-4 col-xs-6">
-                
-
-
-                <div id="gallery">
-                  <div><img src="http://localhost/fareast/public/uploads/gallery/48.jpg"/>
-                    <a href="#lightbox-48" style="font-size: 14px;">বিজনেস কনফারেন্স ও বীমা দাবীর চেক প্রদান অনুষ্ঠান-২০১৮</a></div>
-                </div>
-
-                <div class="lightbox" id="lightbox-48">
-                  <div class="content"><img src="http://localhost/fareast/public/uploads/gallery/48.jpg"/>
-                    <div class="title">বিজনেস কনফারেন্স ও বীমা দাবীর চেক প্রদান অনুষ্ঠান-২০১৮</div><a class="close" href="#gallery"></a>
-                  </div>
-                
-                </div>
-              </div>
-
-                          <div class="col-lg-3 col-md-4 col-xs-6">
-                
-
-
-                <div id="gallery">
-                  <div><img src="http://localhost/fareast/public/uploads/gallery/47.jpg"/>
-                    <a href="#lightbox-47" style="font-size: 14px;">মাসিক সমন্বয় সভা-২০১৭ উক্ত সভায় উপস্থিত ছিলেন কোম্পানীর চেয়ারম্যান জনাব, মোঃ নজ্রুল ইসলাম।</a></div>
-                </div>
-
-                <div class="lightbox" id="lightbox-47">
-                  <div class="content"><img src="http://localhost/fareast/public/uploads/gallery/47.jpg"/>
-                    <div class="title">মাসিক সমন্বয় সভা-২০১৭ উক্ত সভায় উপস্থিত ছিলেন কোম্পানীর চেয়ারম্যান জনাব, মোঃ নজ্রুল ইসলাম।</div><a class="close" href="#gallery"></a>
-                  </div>
-                
-                </div>
-              </div>
-
-                          <div class="col-lg-3 col-md-4 col-xs-6">
-                
-
-
-                <div id="gallery">
-                  <div><img src="http://localhost/fareast/public/uploads/gallery/46.jpg"/>
-                    <a href="#lightbox-46" style="font-size: 14px;">বার্ষিক পরিকল্পনা ও প্রশিক্ষন সভা-২০১৭ মূল্যবান কথা বলছেন কোম্পানীর চেয়ারম্যান স্যার জনাব, মোঃ নজরুল ইসলাম ।</a></div>
-                </div>
-
-                <div class="lightbox" id="lightbox-46">
-                  <div class="content"><img src="http://localhost/fareast/public/uploads/gallery/46.jpg"/>
-                    <div class="title">বার্ষিক পরিকল্পনা ও প্রশিক্ষন সভা-২০১৭ মূল্যবান কথা বলছেন কোম্পানীর চেয়ারম্যান স্যার জনাব, মোঃ নজরুল ইসলাম ।</div><a class="close" href="#gallery"></a>
-                  </div>
-                
-                </div>
-              </div>
-
-                          <div class="col-lg-3 col-md-4 col-xs-6">
-                
-
-
-                <div id="gallery">
-                  <div><img src="http://localhost/fareast/public/uploads/gallery/45.JPG"/>
-                    <a href="#lightbox-45" style="font-size: 14px;">১৭তম প্রতিষ্ঠা বার্ষিকী ও ইফতার মাহফিল-২০১৭</a></div>
-                </div>
-
-                <div class="lightbox" id="lightbox-45">
-                  <div class="content"><img src="http://localhost/fareast/public/uploads/gallery/45.JPG"/>
-                    <div class="title">১৭তম প্রতিষ্ঠা বার্ষিকী ও ইফতার মাহফিল-২০১৭</div><a class="close" href="#gallery"></a>
-                  </div>
-                
-                </div>
-              </div>
-
-                          <div class="col-lg-3 col-md-4 col-xs-6">
-                
-
-
-                <div id="gallery">
-                  <div><img src="http://localhost/fareast/public/uploads/gallery/44.JPG"/>
-                    <a href="#lightbox-44" style="font-size: 14px;">অটোমেশন পিআর, এমআর  ম্যানেজমেন্ট সফটওয়্যার BEFTN পেমেন্ট সিস্টেম ও ক্যাশ ম্যানেজমেন্ট প্রশিক্ষন-২০১৭</a></div>
-                </div>
-
-                <div class="lightbox" id="lightbox-44">
-                  <div class="content"><img src="http://localhost/fareast/public/uploads/gallery/44.JPG"/>
-                    <div class="title">অটোমেশন পিআর, এমআর  ম্যানেজমেন্ট সফটওয়্যার BEFTN পেমেন্ট সিস্টেম ও ক্যাশ ম্যানেজমেন্ট প্রশিক্ষন-২০১৭</div><a class="close" href="#gallery"></a>
-                  </div>
-                
-                </div>
-              </div>
-
-                          <div class="col-lg-3 col-md-4 col-xs-6">
-                
-
-
-                <div id="gallery">
-                  <div><img src="http://localhost/fareast/public/uploads/gallery/43.jpg"/>
-                    <a href="#lightbox-43" style="font-size: 14px;">চেক হস্তান্তর করছেন  গ্রাহকের নিকট কোম্পানীর মুখ্য নির্বাহী কর্মকর্তা জনাব, মোঃ হেমায়েত উল্লাহ স্যার</a></div>
-                </div>
-
-                <div class="lightbox" id="lightbox-43">
-                  <div class="content"><img src="http://localhost/fareast/public/uploads/gallery/43.jpg"/>
-                    <div class="title">চেক হস্তান্তর করছেন  গ্রাহকের নিকট কোম্পানীর মুখ্য নির্বাহী কর্মকর্তা জনাব, মোঃ হেমায়েত উল্লাহ স্যার</div><a class="close" href="#gallery"></a>
-                  </div>
-                
-                </div>
-              </div>
-
-                          <div class="col-lg-3 col-md-4 col-xs-6">
-                
-
-
-                <div id="gallery">
-                  <div><img src="http://localhost/fareast/public/uploads/gallery/42.jpg"/>
-                    <a href="#lightbox-42" style="font-size: 14px;">শহীদ কন্সটেবল মোঃ জহিরুল ইসলাম এর মরনোত্তর বীমা চেক হস্তান্তর করছেন নমীনীর হাতে নুরুল ইসলাম(পু্লিশ সুপার,ময়মনসিংহ)</a></div>
-                </div>
-
-                <div class="lightbox" id="lightbox-42">
-                  <div class="content"><img src="http://localhost/fareast/public/uploads/gallery/42.jpg"/>
-                    <div class="title">শহীদ কন্সটেবল মোঃ জহিরুল ইসলাম এর মরনোত্তর বীমা চেক হস্তান্তর করছেন নমীনীর হাতে নুরুল ইসলাম(পু্লিশ সুপার,ময়মনসিংহ)</div><a class="close" href="#gallery"></a>
-                  </div>
-                
-                </div>
-              </div>
-
             
+
+
+            <section class="fareast-gallery">
+                            <img src="http://localhost/fareast/public/uploads/gallery/57.JPG" 
+                    alt="জোনাল কনফারেন্স-২০১৯ উদ্বোধন করছেন মাননীয় চেয়ারম্যান জনাব, নজরুল ইসলাম স্যার" 
+                    class="p-2 img-fluid" />
+
+
+                         <div class="lightbox fareast-lightbox">
+                    <div class="title">জোনাল কনফারেন্স-২০১৯ উদ্বোধন করছেন মাননীয় চেয়ারম্যান জনাব, নজরুল ইসলাম স্যার</div>
+                    <div class="filter"></div>
+                    <div class="close"></div>
+                  </div>
+
+                    
+                            <img src="http://localhost/fareast/public/uploads/gallery/56.jpg" 
+                    alt="Fareast Apps, Composite Service Center &amp; TVC এর শুভ উদ্বোধন করছেন জনাব, শফিকুর রহমান পাটোয়ারী (চেয়ারম্যান , বীমা উন্নয়ন ও নিয়ন্ত্রন কর্তৃপক্ষ)।" 
+                    class="p-2 img-fluid" />
+
+
+                         <div class="lightbox fareast-lightbox">
+                    <div class="title">Fareast Apps, Composite Service Center &amp; TVC এর শুভ উদ্বোধন করছেন জনাব, শফিকুর রহমান পাটোয়ারী (চেয়ারম্যান , বীমা উন্নয়ন ও নিয়ন্ত্রন কর্তৃপক্ষ)।</div>
+                    <div class="filter"></div>
+                    <div class="close"></div>
+                  </div>
+
+                    
+                            <img src="http://localhost/fareast/public/uploads/gallery/55.JPG" 
+                    alt="আইটি ডিপার্ট্মেন্ট পরিদর্শন করছেন মাননীয় চেয়ারম্যান জনাব, মোঃ শফিকুর রহমান পাটোয়ারী (বীমা উন্নয়ন ও নিয়ন্ত্রন কর্তৃপক্ষ) । সাথে আছেন জনাব, শেখ কবির হোসেন (মাননীয় প্রেসিডেন্ট, বাংলাদেশ ইন্সুরেন্স এসোসিয়েশন)" 
+                    class="p-2 img-fluid" />
+
+
+                         <div class="lightbox fareast-lightbox">
+                    <div class="title">আইটি ডিপার্ট্মেন্ট পরিদর্শন করছেন মাননীয় চেয়ারম্যান জনাব, মোঃ শফিকুর রহমান পাটোয়ারী (বীমা উন্নয়ন ও নিয়ন্ত্রন কর্তৃপক্ষ) । সাথে আছেন জনাব, শেখ কবির হোসেন (মাননীয় প্রেসিডেন্ট, বাংলাদেশ ইন্সুরেন্স এসোসিয়েশন)</div>
+                    <div class="filter"></div>
+                    <div class="close"></div>
+                  </div>
+
+                    
+                            <img src="http://localhost/fareast/public/uploads/gallery/54.jpg" 
+                    alt="বিভাগীয় ইনচার্জগনের মাসিক সমন্বয় সভা-২০১৯" 
+                    class="p-2 img-fluid" />
+
+
+                         <div class="lightbox fareast-lightbox">
+                    <div class="title">বিভাগীয় ইনচার্জগনের মাসিক সমন্বয় সভা-২০১৯</div>
+                    <div class="filter"></div>
+                    <div class="close"></div>
+                  </div>
+
+                    
+                            <img src="http://localhost/fareast/public/uploads/gallery/53.jpg" 
+                    alt="সেরা করদাতা হিসেবে সম্মাননা গ্রহন করছেন কোম্পানীর চেয়ারম্যান স্যার জনাব, নজরুল ইসলাম" 
+                    class="p-2 img-fluid" />
+
+
+                         <div class="lightbox fareast-lightbox">
+                    <div class="title">সেরা করদাতা হিসেবে সম্মাননা গ্রহন করছেন কোম্পানীর চেয়ারম্যান স্যার জনাব, নজরুল ইসলাম</div>
+                    <div class="filter"></div>
+                    <div class="close"></div>
+                  </div>
+
+                    
+                            <img src="http://localhost/fareast/public/uploads/gallery/52.JPG" 
+                    alt="আইটি ডিপার্টমেন্ট পরিদর্শন করছেন  জনাব, নজরুল ইসলাম (চেয়ারম্যান) এবং মোঃ হেমায়েত উল্লাহ (মুখ্য নির্বাহী কর্মকর্তা)" 
+                    class="p-2 img-fluid" />
+
+
+                         <div class="lightbox fareast-lightbox">
+                    <div class="title">আইটি ডিপার্টমেন্ট পরিদর্শন করছেন  জনাব, নজরুল ইসলাম (চেয়ারম্যান) এবং মোঃ হেমায়েত উল্লাহ (মুখ্য নির্বাহী কর্মকর্তা)</div>
+                    <div class="filter"></div>
+                    <div class="close"></div>
+                  </div>
+
+                    
+                            <img src="http://localhost/fareast/public/uploads/gallery/51.jpg" 
+                    alt="১৮তম  প্রতিষ্ঠা বার্ষিকী ও ইফতার মাহফিল-২০১৮" 
+                    class="p-2 img-fluid" />
+
+
+                         <div class="lightbox fareast-lightbox">
+                    <div class="title">১৮তম  প্রতিষ্ঠা বার্ষিকী ও ইফতার মাহফিল-২০১৮</div>
+                    <div class="filter"></div>
+                    <div class="close"></div>
+                  </div>
+
+                    
+                            <img src="http://localhost/fareast/public/uploads/gallery/50.jpg" 
+                    alt="বীমা মেলা-২০১৮ উদ্বোধনী অনুষ্ঠানে আলাপ আলোচনায়" 
+                    class="p-2 img-fluid" />
+
+
+                         <div class="lightbox fareast-lightbox">
+                    <div class="title">বীমা মেলা-২০১৮ উদ্বোধনী অনুষ্ঠানে আলাপ আলোচনায়</div>
+                    <div class="filter"></div>
+                    <div class="close"></div>
+                  </div>
+
+                    
+                            <img src="http://localhost/fareast/public/uploads/gallery/49.JPG" 
+                    alt="বীমা মেলা-২০১৮ উপলক্ষ্যে র‍্যালী্র আয়োজন করা হয়।" 
+                    class="p-2 img-fluid" />
+
+
+                         <div class="lightbox fareast-lightbox">
+                    <div class="title">বীমা মেলা-২০১৮ উপলক্ষ্যে র‍্যালী্র আয়োজন করা হয়।</div>
+                    <div class="filter"></div>
+                    <div class="close"></div>
+                  </div>
+
+                    
+                            <img src="http://localhost/fareast/public/uploads/gallery/48.jpg" 
+                    alt="বিজনেস কনফারেন্স ও বীমা দাবীর চেক প্রদান অনুষ্ঠান-২০১৮" 
+                    class="p-2 img-fluid" />
+
+
+                         <div class="lightbox fareast-lightbox">
+                    <div class="title">বিজনেস কনফারেন্স ও বীমা দাবীর চেক প্রদান অনুষ্ঠান-২০১৮</div>
+                    <div class="filter"></div>
+                    <div class="close"></div>
+                  </div>
+
+                    
+                            <img src="http://localhost/fareast/public/uploads/gallery/47.jpg" 
+                    alt="মাসিক সমন্বয় সভা-২০১৭ উক্ত সভায় উপস্থিত ছিলেন কোম্পানীর চেয়ারম্যান জনাব, মোঃ নজ্রুল ইসলাম।" 
+                    class="p-2 img-fluid" />
+
+
+                         <div class="lightbox fareast-lightbox">
+                    <div class="title">মাসিক সমন্বয় সভা-২০১৭ উক্ত সভায় উপস্থিত ছিলেন কোম্পানীর চেয়ারম্যান জনাব, মোঃ নজ্রুল ইসলাম।</div>
+                    <div class="filter"></div>
+                    <div class="close"></div>
+                  </div>
+
+                    
+                            <img src="http://localhost/fareast/public/uploads/gallery/46.jpg" 
+                    alt="বার্ষিক পরিকল্পনা ও প্রশিক্ষন সভা-২০১৭ মূল্যবান কথা বলছেন কোম্পানীর চেয়ারম্যান স্যার জনাব, মোঃ নজরুল ইসলাম ।" 
+                    class="p-2 img-fluid" />
+
+
+                         <div class="lightbox fareast-lightbox">
+                    <div class="title">বার্ষিক পরিকল্পনা ও প্রশিক্ষন সভা-২০১৭ মূল্যবান কথা বলছেন কোম্পানীর চেয়ারম্যান স্যার জনাব, মোঃ নজরুল ইসলাম ।</div>
+                    <div class="filter"></div>
+                    <div class="close"></div>
+                  </div>
+
+                    
+                            <img src="http://localhost/fareast/public/uploads/gallery/45.JPG" 
+                    alt="১৭তম প্রতিষ্ঠা বার্ষিকী ও ইফতার মাহফিল-২০১৭" 
+                    class="p-2 img-fluid" />
+
+
+                         <div class="lightbox fareast-lightbox">
+                    <div class="title">১৭তম প্রতিষ্ঠা বার্ষিকী ও ইফতার মাহফিল-২০১৭</div>
+                    <div class="filter"></div>
+                    <div class="close"></div>
+                  </div>
+
+                    
+                            <img src="http://localhost/fareast/public/uploads/gallery/44.JPG" 
+                    alt="অটোমেশন পিআর, এমআর  ম্যানেজমেন্ট সফটওয়্যার BEFTN পেমেন্ট সিস্টেম ও ক্যাশ ম্যানেজমেন্ট প্রশিক্ষন-২০১৭" 
+                    class="p-2 img-fluid" />
+
+
+                         <div class="lightbox fareast-lightbox">
+                    <div class="title">অটোমেশন পিআর, এমআর  ম্যানেজমেন্ট সফটওয়্যার BEFTN পেমেন্ট সিস্টেম ও ক্যাশ ম্যানেজমেন্ট প্রশিক্ষন-২০১৭</div>
+                    <div class="filter"></div>
+                    <div class="close"></div>
+                  </div>
+
+                    
+                            <img src="http://localhost/fareast/public/uploads/gallery/43.jpg" 
+                    alt="চেক হস্তান্তর করছেন  গ্রাহকের নিকট কোম্পানীর মুখ্য নির্বাহী কর্মকর্তা জনাব, মোঃ হেমায়েত উল্লাহ স্যার" 
+                    class="p-2 img-fluid" />
+
+
+                         <div class="lightbox fareast-lightbox">
+                    <div class="title">চেক হস্তান্তর করছেন  গ্রাহকের নিকট কোম্পানীর মুখ্য নির্বাহী কর্মকর্তা জনাব, মোঃ হেমায়েত উল্লাহ স্যার</div>
+                    <div class="filter"></div>
+                    <div class="close"></div>
+                  </div>
+
+                    
+                            <img src="http://localhost/fareast/public/uploads/gallery/42.jpg" 
+                    alt="শহীদ কন্সটেবল মোঃ জহিরুল ইসলাম এর মরনোত্তর বীমা চেক হস্তান্তর করছেন নমীনীর হাতে নুরুল ইসলাম(পু্লিশ সুপার,ময়মনসিংহ)" 
+                    class="p-2 img-fluid" />
+
+
+                         <div class="lightbox fareast-lightbox">
+                    <div class="title">শহীদ কন্সটেবল মোঃ জহিরুল ইসলাম এর মরনোত্তর বীমা চেক হস্তান্তর করছেন নমীনীর হাতে নুরুল ইসলাম(পু্লিশ সুপার,ময়মনসিংহ)</div>
+                    <div class="filter"></div>
+                    <div class="close"></div>
+                  </div>
+
+                    
+                          </section>
+
+       
+
 
      </div>
 

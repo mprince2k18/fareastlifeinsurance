@@ -1671,6 +1671,133 @@ button{
   margin-left:170px;
 }
 
+{{-- Fareast-gallery --}}
+.fareast-gallery {
+  column-width: 300px;
+  column-gap: 5px;
+  padding: 5px;
+}
+
+.fareast-gallery img {
+  width: 100%;
+  cursor: pointer;
+  border-radius: 10px !important;
+}
+
+.fareast-lightbox {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: none;
+  background: #7f8c8d;
+  perspective: 1000;
+}
+
+.fareast-lightbox .filter {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  filter: blur(20px);
+  opacity: 0.5;
+  background-position: center;
+  background-size: cover;
+}
+
+.fareast-lightbox img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotateY(0deg);
+  max-height: 95vh;
+  max-width: calc(95vw - 100px);
+  transition: 0.8s cubic-bezier(0.7, 0, 0.4, 1);
+  transform-style: preserve-3d;
+}
+
+
+/*.lightbox:hover img{
+  transform: translate(-50%, -50%) rotateY(180deg);
+}*/
+
+.fareast-lightbox [class^="arrow"] {
+  height: 200px;
+  width: 50px;
+  background: rgba(0, 0, 0, 0.4);
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.fareast-lightbox [class^="arrow"]:after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+  width: 15px;
+  height: 15px;
+}
+
+.fareast-lightbox .arrowr {
+  right: 0;
+}
+
+.fareast-lightbox .arrowr:after {
+  border-right: 1px solid white;
+  border-bottom: 1px solid white;
+}
+
+.fareast-lightbox .arrowl {
+  left: 0;
+}
+
+.fareast-lightbox .arrowl:after {
+  border-left: 1px solid white;
+  border-top: 1px solid white;
+}
+
+.fareast-lightbox .close {
+  position: absolute;
+  right: 0;
+  width: 50px;
+  height: 50px;
+  background: rgba(0, 0, 0, 0.4);
+  margin: 20px;
+  cursor: pointer;
+}
+
+.fareast-lightbox .close:after,
+.close:before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 1px;
+  height: 100%;
+  background: #e74c3c;
+}
+
+.fareast-lightbox .close:after {
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.fareast-lightbox .close:before {
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.fareast-lightbox .title {
+  font-size: 20px;
+  color: #000;
+  z-index: 1000;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+{{-- Fareast-gallery::END --}}
+
 @endsection
 
 @section('content')
@@ -2612,14 +2739,9 @@ button{
       <div class="row">
 
 
-            @forelse ($galleries as $gallery)
+            {{-- @forelse ($galleries as $gallery)
               <div class="col-lg-3 col-md-4 col-xs-6">
-                {{-- <a href="{{ asset('uploads/gallery') }}/{{ $gallery->gallery }}" class="fancybox" rel="ligthbox">
-                    <img  src="{{ asset('uploads/gallery') }}/{{ $gallery->gallery }}" class="zoom img-fluid"  alt="">
-                    open image
-                </a> --}}
-
-
+        
                 <div id="gallery">
                   <div><img src="{{ asset('uploads/gallery') }}/{{ $gallery->gallery }}"/>
                     <a href="#lightbox-{{ $gallery->id }}" style="font-size: 14px;">{{ $gallery->title }}</a></div>
@@ -2635,7 +2757,30 @@ button{
 
             @empty
 
+            @endforelse --}}
+
+
+            <section class="fareast-gallery">
+              @forelse ($galleries as $gallery)
+              <img src="{{ asset('uploads/gallery') }}/{{ $gallery->gallery }}" 
+                    alt="{{ $gallery->title }}" 
+                    class="p-2 img-fluid" />
+
+                    
+              @empty
+
+                <div class="text-center">
+                  <h1>No Gallery Found</h1>
+                </div>
+
             @endforelse
+            </section>
+
+            <div class="lightbox fareast-lightbox">
+                    <div class="title"></div>
+                    <div class="filter"></div>
+                    <div class="close"></div>
+                  </div>
 
 
      </div>
